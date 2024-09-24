@@ -774,33 +774,6 @@ $ ./forin2.sh
 ![alt text](img/forin2.png)
 
 
-
-cat forctype.sh 
-```bash
-#!/bin/bash
-# testing the C-style for loop
-for (( i=1; i <= 5; i++ ))
-do
-echo "The value of i is $i"
-done
-````
-$ chmod 755 forctype.sh
-$ ./forctype.sh 
-## OUTPUT
-
-cat forctype1.sh 
-```bash
-#!/bin/bash
-# multiple variables
-for (( a=1, b=5; a <= 5; a++, b-- ))
-do
-echo "$a - $b"
-done
-```
-$ chmod 755 forctype.sh
-$ ./forctype1.sh 
-## OUTPUT
-
 cat fornested1.sh 
 ```bash
 #!/bin/bash
@@ -818,7 +791,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
-
+![alt text](img/fornested1.png)
  
 cat forbreak.sh 
 ```bash
@@ -834,13 +807,16 @@ echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
 ```
+$ chmod 755 forbreak.sh
+
+$ ./forbreak.sh 
 ## OUTPUT
 
-$ chmod 755 forbreak.sh
+![alt text](img/forbreak.png)
  
-$ ./forbreak.sh 
+
  
-cat forbreak.sh 
+cat forcontinue.sh 
 ```bash
 #!/bin/bash
 # breaking out of a for loop
@@ -860,6 +836,8 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
+![alt text](img/forcontinue.png)
+
  
 cat exread.sh 
 ```bash
@@ -875,21 +853,8 @@ $ chmod 755 exread.sh
 $ ./exread.sh 
 ## OUTPUT
 
+![alt text](img/exread.png)
 
- cat exread1.sh
-```bash
-#!/bin/bash
-# testing the read command
-read -p "Enter your name: " name
-echo "Hello $name, welcome to my program. “
-``` 
-$ chmod 755 exread1.sh 
-
-## OUTPUT
-
-
-
-$ ./exread1.sh 
  
 cat funcex.sh
 ```bash
@@ -906,25 +871,13 @@ else
 echo "Usage: badtest1 a b"
 fi
 ```
-## OUTPUT
+## O!UTPUT
  ./funcex.sh 
 
- 
+ [alt text](img/funcex.png)
  ./funcex.sh 1 2
 
- 
-cat argshift.sh
-```bash
-#!/bin/bash 
- while (( "$#" )); do 
-  echo $1 
-  shift 
-done
-```
-$ chmod 777 argshift.sh
-
-## OUTPUT
-$ ./argshift.sh 1 2 3
+ ![alt text](img/funcex12.png)
  
  cat argshift1.sh
 ```bash
@@ -940,8 +893,9 @@ for (( i=0;i<$ELEMENTS;i++)); do
 done
 ```
 $ chmod 777 argshift.sh
-## OUTPUT
 $ ./argshift.sh 1 2 3
+## OUTPUT
+![alt text](img/argshift123.png)
  
 cat argshift.sh
 ```bash
@@ -955,7 +909,7 @@ set +x
 ```
 ## OUTPUT
  ./argshift.sh 1 2 3
- 
+ ![alt text](img/argshift123.png)
  
 cat > nc.awk
 ```bash
@@ -986,7 +940,9 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+ ![alt text](img/awk.png)
+
+
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1013,7 +969,7 @@ else
 fi
 ```
 ## OUTPUT 
-
+![alt text](img/palindrome.png)
 
 # RESULT:
 The Commands are executed successfully.
